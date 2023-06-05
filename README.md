@@ -2,7 +2,7 @@
 O StarShopping é um projeto de exemplo que demonstra um sistema de compras online usando tecnologias modernas.
 
 #Requisitos
-Certifique-se de ter o Node.js e o npm instalados em sua máquina antes de prosseguir.
+Certifique-se de ter o Node.js antes de prosseguir.
 
 #Instalação
 Clone este repositório em sua máquina local:
@@ -35,6 +35,7 @@ Abra o navegador e acesse http://localhost para visualizar o aplicativo.
 Execute os testes automatizados para verificar a integridade do código:
 
 Os testes infelizmente deram errado, tive vários erros de versionamento :(
+
 bash
 Copy code
 npm run test
