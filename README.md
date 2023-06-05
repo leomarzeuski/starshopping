@@ -1,29 +1,29 @@
-StarShopping
+#StarShopping
 O StarShopping é um projeto de exemplo que demonstra um sistema de compras online usando tecnologias modernas.
 
-Requisitos
+#Requisitos
 Certifique-se de ter o Node.js e o npm instalados em sua máquina antes de prosseguir.
 
-Instalação
+#Instalação
 Clone este repositório em sua máquina local:
 
-bash
+#bash
 Copy code
 git clone https://github.com/seu-usuario/starshopping.git
 Acesse o diretório do projeto:
 
-bash
+#bash
 Copy code
 cd starshopping
 Instale as dependências do projeto:
 
-bash
+#bash
 Copy code
 npm install
 Execução
 Certifique-se de ter o servidor Apollo em execução antes de iniciar o projeto.
 
-Inicie o projeto em modo de desenvolvimento:
+#Inicie o projeto em modo de desenvolvimento:
 
 bash
 Copy code
@@ -31,7 +31,7 @@ npm i
 npm run dev
 Abra o navegador e acesse http://localhost para visualizar o aplicativo.
 
-Testes
+#Testes
 Execute os testes automatizados para verificar a integridade do código:
 
 Os testes infelizmente deram errado, tive vários erros de versionamento :(
