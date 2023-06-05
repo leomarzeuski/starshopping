@@ -1,0 +1,51 @@
+@import '../../styles/themes/_default2' ;
+
+.QuantityInputContainer {
+  flex: 1;
+  background: map-get(map-get($defaultTheme, 'colors'), 'base-button');
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  border-radius: 6px;
+  height: 2.375rem;
+
+  padding: 0.5rem;
+
+  input {
+    text-align: center;
+    width: 100%;
+    background: none;
+    border: none;
+    color: map-get(map-get($defaultTheme, 'colors'), 'base-title');
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &.medium {
+    padding: 0.5rem;
+  }
+
+  &.small {
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+.IconWrapper {
+  width: 0.875rem;
+  height: 0.875rem;
+  border: none;
+  background: none;
+  color: map-get(map-get($defaultTheme, 'colors'), 'brand-purple');
+  transition: 0.4s;
+
+  &:disabled {
+    opacity: 0.4;
+  }
+
+  &:not(:disabled):hover {
+    color: map-get(map-get($defaultTheme, 'colors'), 'brand-purple-dark');
+  }
+}

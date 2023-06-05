@@ -1,0 +1,33 @@
+@import '../../../../styles/themes/default2';
+@import '../../../../pages/CompleteOrder/styles.scss';
+
+.SelectedCoffeesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 43rem;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+}
+
+.DetailsContainer {
+  @extend %SectionBaseStyle;
+  border-radius: 6px 44px 6px 44px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.ConfirmationSectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

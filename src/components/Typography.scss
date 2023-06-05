@@ -1,0 +1,12 @@
+@import '../styles/themes/default2';
+
+$font-family-title: 'Arial', sans-serif;
+$font-family-text: 'Helvetica', sans-serif;
+
+@mixin text($size: 'xl', $color: 'title', $weight: 800) {
+  color: map-get(map-get($defaultTheme, 'colors'), $color);
+  font-size: map-get(map-get($defaultTheme, 'textSizes'), $size);
+  font-family: $font-family-title;
+  line-height: 130%;
+  font-weight: $weight;
+}

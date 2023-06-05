@@ -1,0 +1,51 @@
+@import '../../styles/themes/_default2' ;
+
+.input-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  position: relative;
+}
+
+.input-container {
+  height: 2.625rem;
+  border-radius: 4px;
+  border: 1px solid map-get(map-get($defaultTheme, 'colors'), 'base-button');
+  background: map-get(map-get($defaultTheme, 'colors'), 'base-input');
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+  &:focus-within {
+    border-color: map-get(map-get($defaultTheme, 'colors'), 'brand-yellow-dark');
+  }
+}
+
+.input-container-error {
+  border-color: map-get(map-get($defaultTheme, 'colors'), 'base-error');
+}
+
+.input-styled {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0 0.75rem;
+  height: 100%;
+  font-size: 0.75rem;
+  color: map-get(map-get($defaultTheme, 'colors'), 'base-text');
+
+  &::placeholder {
+    color: map-get(map-get($defaultTheme, 'colors'), 'base-label');
+  }
+}
+
+.right-text {
+  font-size: 0.75rem;
+  margin-right: 0.75rem;
+  font-style: italic;
+  color: map-get(map-get($defaultTheme, 'colors'), 'base-label');
+}

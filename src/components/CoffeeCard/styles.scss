@@ -1,0 +1,73 @@
+@import '../../styles/themes/_default2'; 
+@import '../Typography.scss';
+
+.starwars-card-container {
+  width: 100%;
+  background: map-get(map-get($defaultTheme, 'colors'), 'base-card');
+  border-radius: 6px 36px 6px 36px;
+  padding: 33px 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+
+  img {
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-top: -5rem;
+  }
+}
+
+.tags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+
+  span {
+    background: map-get(map-get($defaultTheme, 'colors'), 'base-subtitle');
+    color: map-get(map-get($defaultTheme, 'colors'), 'brand-green');
+    font-size: map-get(map-get($defaultTheme, 'textSizes'), 'components-tag');
+    text-transform: uppercase;
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px;
+    font-weight: 900;
+  }
+}
+
+.name {
+  @include text($size: 'title-title-s', $color: 'base-yellow', $weight: 700);
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  @include text($size: 'text-regular-m', $color: 'base-label', $weight: 700);
+  margin-bottom: 2rem;
+}
+
+.price {
+  @include text($size: 'title-title-m', $color: 'base-yellow', $weight: 700);
+}
+
+.card-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    p {
+      line-height: 0.75rem;
+    }
+  }
+}

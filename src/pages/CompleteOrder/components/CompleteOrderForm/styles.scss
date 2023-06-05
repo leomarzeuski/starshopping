@@ -1,0 +1,66 @@
+@import '../../../../styles/themes/default2';
+@import '../../../../pages/CompleteOrder/styles.scss';
+
+.CompleteOrderFormContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.FormSectionContainer {
+  @extend %SectionBaseStyle;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.AddressFormContainer {
+  width: 100%;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    > div {
+      flex: 1;
+    }
+    + .row {
+      margin-top: 1rem;
+    }
+
+    .cep {
+      max-width: 9rem;
+    }
+    .complement {
+      flex: 2;
+    }
+    .city {
+      flex: 1.5;
+    }
+    .uf {
+      flex: 0.4;
+    }
+  }
+  @media (max-width: 500px) {
+    .row {
+      flex-direction: column;
+    }
+    .cep {
+      max-width: 100% !important;
+    }
+  }
+}
+
+.PaymentMethodOptionsContainer {
+  display: flex;
+  gap: 0.75rem;
+  > p {
+    color: map-get(map-get($defaultTheme, 'colors'), 'base-error');
+  }
+  @media (max-width: 620px) {
+    flex-direction: column;
+    gap: 0;
+  }
+}

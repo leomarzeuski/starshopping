@@ -1,0 +1,39 @@
+@import '../../../../styles/themes/default2';
+
+.PaymentMethodContainer {
+  width: 100%;
+  input {
+    visibility: hidden;
+    appearance: none;
+  }
+  input:checked + label .ContentContainer {
+    background: map-get(map-get($defaultTheme, 'colors'), 'brand-purple-light');
+    border-color: map-get(map-get($defaultTheme, 'colors'), 'brand-purple');
+    &:hover {
+      background: map-get(map-get($defaultTheme, 'colors'), 'brand-purple-light');
+    }
+  }
+}
+
+.ContentContainer {
+  padding: 0 1rem;
+  background: map-get(map-get($defaultTheme, 'colors'), 'base-button');
+  color: map-get(map-get($defaultTheme, 'colors'), 'base-text');
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  border-radius: 6px;
+  height: 3rem;
+  border: 1px solid map-get(map-get($defaultTheme, 'colors'), 'base-button');
+  transition: 0.4s;
+  svg {
+    color: map-get(map-get($defaultTheme, 'colors'), 'brand-purple');
+  }
+  &:hover {
+    background: map-get(map-get($defaultTheme, 'colors'), 'base-hover');
+  }
+  user-select: none;
+}

@@ -1,0 +1,74 @@
+@import '../../styles/themes/_default2';
+@import '../Typography.scss';
+
+.tags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+
+  span {
+    background: map-get(map-get($defaultTheme, 'colors'), 'brand-purple-light');
+    color: map-get(map-get($defaultTheme, 'colors'), 'brand-green');
+    font-size: map-get(map-get($defaultTheme, 'textSizes'), 'components-tag');
+    text-transform: uppercase;
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px;
+    font-weight: 700;
+  }
+}
+
+.name {
+  @include text($size: 'title-title-xl', $color: 'base-yellow', $weight: 900);
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: map-get(map-get($defaultTheme, 'textSizes'), 'title-title-s');
+  color: map-get(map-get($defaultTheme, 'colors'), 'base-label');
+  margin-bottom: 2rem;
+}
+
+.card-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    p {
+      line-height: 0.75rem;
+    }
+  }
+}
+
+.add-cart-wrapper {
+  display: flex;
+  width: 7.5rem;
+
+  > button {
+    width: 2.375rem;
+    height: 2.375rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: map-get(map-get($defaultTheme, 'colors'), 'brand-red-dark');
+    color: map-get(map-get($defaultTheme, 'colors'), 'base-card');
+    border-radius: 6px;
+    margin-left: 0.3rem;
+    transition: 0.4s;
+
+    &:hover {
+      background: map-get(map-get($defaultTheme, 'colors'), 'brand-red');
+    }
+  }
+}
